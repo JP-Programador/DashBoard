@@ -1,9 +1,6 @@
-import {Con, Container} from "./styled"
-import Gra from '../graphics/course-registration/index.html'
+import {Container} from "./styled"
 export default function Menu() {
     return (
-       <Con> 
-           <gra />
             <Container>
                 <div className="nav1">
                     <div className="borda1"> </div>
@@ -18,6 +15,5 @@ export default function Menu() {
                     <div className="name3"> <h3>Agendamentos</h3> </div>
                 </div>
             </Container>
-    </Con>
     )
 }   

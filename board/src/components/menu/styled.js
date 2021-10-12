@@ -1,15 +1,10 @@
 import styled from 'styled-components'
 
-const Con = styled.div` 
-display: flex;
-flex-direction: row;
-background-color: blue;
-
-`
 const Container = styled.div`
 background-color: white;
 width: 16em;
 height: 100vh;
+position: fixed;
 
 border-top-right-radius: .5em;
 border-bottom-right-radius: .5em;
@@ -45,4 +40,4 @@ border-bottom-right-radius: .5em;
 }
 `
 
-export {Con, Container}
+export { Container}

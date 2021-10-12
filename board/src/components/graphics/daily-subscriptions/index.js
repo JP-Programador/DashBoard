@@ -19,7 +19,7 @@ return (
 
 
         height={500}
-        width={200}
+        width={60}
 
 
 

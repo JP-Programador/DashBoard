@@ -4,8 +4,7 @@ import styled from 'styled-components'
 const Container = styled.div`
 background-color: #311273;
 height: 10.6em;
-width: 100vw;
-
+margin-left: 15.4em;
 .box-info {
     display: flex;
     justify-content: space-between;
