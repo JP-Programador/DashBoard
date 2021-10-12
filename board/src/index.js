@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import App from './pages/home';
+import App from './pages/registrations';
 
 ReactDOM.render(
   <React.StrictMode>
