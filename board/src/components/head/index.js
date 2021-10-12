@@ -1,18 +1,30 @@
 import { Container } from "./styled"
 
 export default function Cabecalho () {
+   
+    var meses = new Array("janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+    let d = new Date();
+    let dia = d.getDate();
+    let x = d.getMonth();
+    let mes = meses[x];
+
+    let horas = d.getHours();
+    let minutos = d.getMinutes();
+    let Segundos = d.getSeconds();
+    let horario = horas + ":" + minutos + ":" + Segundos;
+
     return(
         <Container>
             <div className="box-info">
-                <div className="messenger">Bom dia, Usuário </div>
+                <div className="messenger"> {horas > 4 && horas < 13 ? 'Bom dia' : 'Boa Tarde'}, Teresa</div>
                 <div className="box1">
                     <div className="dates"> 
                         <div> <img src="./assets/images/calendar.svg" alt="" /></div>
-                        <div> Hoje, 8 de Setembro</div>
+                        <div> <b> Hoje</b>, {dia} de {mes}</div>
                     </div>
                     <div className="schedule">
                         <div className=""> <img src="./assets/images/relogio.svg" alt="" /> </div>
-                        <div className="hours"> 21:08 </div>
+                        <div className="hours"> {horario} </div>
                     </div>
                 </div>
             </div>

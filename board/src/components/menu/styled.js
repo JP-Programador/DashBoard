@@ -8,6 +8,24 @@ position: fixed;
 
 border-top-right-radius: .5em;
 border-bottom-right-radius: .5em;
+
+
+.name {
+    margin-top: 9em;
+    text-align: center;
+}
+
+.log {
+    position: absolute;
+    left: -8em;
+    bottom: 33em;
+
+}
+
+.navs {
+    margin-top: 3em;
+}
+
 .nav1 {
     display: flex;
     flex-direction: row;

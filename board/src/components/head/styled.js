@@ -5,6 +5,7 @@ const Container = styled.div`
 background-color: #311273;
 height: 10.6em;
 margin-left: 15.4em;
+color: white;
 .box-info {
     display: flex;
     justify-content: space-between;
@@ -22,7 +23,9 @@ margin-left: 15.4em;
     margin-top: 1em;
 }
 
-
+b {
+    color: #999999;
+}
 .dates {
     margin-right: 2em;
 
@@ -62,11 +65,12 @@ margin-left: 15.4em;
 .car-name {
     margin-top: 1.2em;
     margin-bottom: 1em;
+    color: black;
 }
 
 .car-resul {
     color: #00CD08;
-;
+
 }
 `
 export {Container}
