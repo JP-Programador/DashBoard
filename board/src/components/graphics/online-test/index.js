@@ -16,8 +16,8 @@ return (
         }}
 
 
-        height={500}
-        width={200}
+        height={400}
+        width={546}
 
 
 
@@ -31,9 +31,12 @@ return (
             plugins: {
                 title: {
                     display: true,
-                    text: 'Prova Presencial'
-                }
-            }
+                    text: 'Prova Presencial',
+                    padding: 10
+                },
+               
+            },
+        
      
         }}
         />
