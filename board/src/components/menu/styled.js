@@ -10,6 +10,11 @@ border-top-right-radius: .5em;
 border-bottom-right-radius: .5em;
 
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .name {
     margin-top: 9em;
     text-align: center;

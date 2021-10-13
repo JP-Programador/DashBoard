@@ -2,7 +2,7 @@ import { Container } from "./styled"
 
 export default function Cabecalho () {
    
-    var meses = new Array(["janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"])
+    var meses = new Array("janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
     let d = new Date();
     let dia = d.getDate();
     let x = d.getMonth();
@@ -20,7 +20,7 @@ export default function Cabecalho () {
                 <div className="box1">
                     <div className="dates"> 
                         <div> <img src="./assets/images/calendar.svg" alt="" /></div>
-                        <div> <b> Hoje</b>, {dia} de {mes}</div>
+                        <div> <b> Hoje, </b> {dia} de {mes}</div>
                     </div>
                     <div className="schedule">
                         <div className=""> <img src="./assets/images/relogio.svg" alt="" /> </div>

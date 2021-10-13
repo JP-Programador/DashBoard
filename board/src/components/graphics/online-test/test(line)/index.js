@@ -1,15 +1,15 @@
-import { Doughnut } from 'react-chartjs-2'
+import { Bar } from 'react-chartjs-2'
 
 const BarChart = () => {
 
 return (
     <div>
-        <Doughnut data={{
+        <Bar data={{
                     labels: ['Presencial','Online'],
                     datasets: [
-                        {   label: 'On',
+                        {   label: 'Provas',
                             data: [12, 42],
-                            backgroundColor: ['rgb(66, 234, 0)', '#6B1AF0']
+                            fill: true,
                         }
                         
                     ],
@@ -17,13 +17,20 @@ return (
 
 
         height={400}
-        width={440}
+        width={546}
 
 
 
 
 
         options={{
+
+            elements: {
+                line: {
+                  borderWidth: 3
+                }
+              },
+
             maintainAspectRatio: false,
             layout: {
                 padding: 20

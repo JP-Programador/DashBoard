@@ -4,15 +4,13 @@ const Container = styled.div`
 display: flex;
 justify-content: space-between;
 
-.name1 > a {
+.name3 > a {
     color: #8808ED !important;
 }
 
-.borda1 {
+.borda3 {
     border-color: #2DCDFF !important;
 }
-
-
 
 `
 const ContainerConteudo = styled.div`
@@ -20,31 +18,18 @@ width: 100vw;
 height: 200vh;
 background-color: #F0FFFE;
 
-
-.gra1 {
-    width: 73vw;
+.gra1, .gra2 {
     left: 18.5em;
     position: absolute;
     background-color: white;
     margin: 8em 0px;
     border-radius: 10px;
-}
-
-.box-gra {
-    position: absolute;
-    top: 53em;
-    left: 18.8em;
-    display: flex;
-justify-content:space-between}   
-.gra3 {
-    background-color: white;
-    border-radius: 10px;
+    width: 73vw;
 
 }
+
 .gra2 {
-    background-color: white;
-    margin-right: 7em;
-    border-radius: 10px;
+    margin-top: 42em;
 }
 `
 

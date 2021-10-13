@@ -5,23 +5,22 @@ const BarChart = () => {
 return (
     <div>
         <Bar data={{
-                    labels: ['Adm', 'Informatica', 'Inglês', 'Com. Visual', 'EletroTecnica'],
+                    labels: ['Agendamentos', 'Agendamentos ao Dia', 'Agendarão (Não Compareceu)'],
                     datasets: [
                         {
-                            label: 'Manhã',
-                            data: [12, 2, 32, 4],
+                            label: 'Agendados',
+                            data: [12],
                             backgroundColor: ['red'],
-                            borderColor: ['blue']
                         },
 
                         {
-                            label: 'Tarde',
-                            data: [15, 24, 2,5],
+                            label: 'Expectativa',
+                            data: [0, 24, 2,5],
                             backgroundColor: ['blue'],
                         },
                         {
-                            label: 'Noite',
-                            data: [5, 4, 3],
+                            label: 'Realidade',
+                            data: [0, 4, 3],
                             backgroundColor: ['green'],
                         }
                         
@@ -44,7 +43,7 @@ return (
             plugins: {
                 title: {
                     display: true,
-                    text: 'Inscrições por Curso'
+                    text: 'Agendamentos'
                 }
             }
      
