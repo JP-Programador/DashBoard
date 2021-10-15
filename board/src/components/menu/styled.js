@@ -21,9 +21,10 @@ a {
 }
 
 .log {
-    position: absolute;
+    position: fixed;
     left: -8em;
-    bottom: 33em;
+    bottom: 48em;
+} 
 
 }
 

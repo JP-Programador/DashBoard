@@ -1,74 +1,99 @@
+import axios from 'axios'
+import { useEffect, useState } from 'react';
 import { Line} from 'react-chartjs-2'
 
 
 const BarChart = () => {
+    const [data, setData] = useState({label:[], datasets:[]});
 
 
+    async function loadData() {
+        const resp = await axios.get('https://insf-vestibular-2022.herokuapp.com/comoconheceu');
+        const labels  = resp.data.map(x => x.tipo);
+        const qtdData = resp.data.map(x => x.qtd);
     
-return (
+        setData({
+            labels: labels,
+            datasets: [{
+            label: `#Como conheceu`,
+            data: qtdData,
+            backgroundColor: [
+                'red',
+                'blue',
+                'green',
+                'yellow',
+                'orange'
+            ],
+            borderColor: [
+                'gray'
+            ]
+            }]
+        });
+    }
 
-    
-    
-    <div>
+    useEffect(() => loadData(), []);
+
         
-        <Line data={{
-                    labels: ['Familia', 'Ex Alunos', 'Amigos', 'Professores'],
-                    datasets: [
-                        {
-                            label: 'Divulgação',
-                            data: [10, 20, 35, 10],
-                            backgroundColor: ['red'],
-                            borderColor: ['red'],
+    return (
+
+        <div>
+
+            <Clock />
+
+            <div>
+
+            <Line data={data}
+                height={500}
+                width={200}
+                options={
+                    {
+                    maintainAspectRatio: false,
+                    layout: {
+                        padding: 20
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Métodos de  Divulgação'
+                        },
+                    },
+                    animations: {
+                        tension: {
+                        duration: 1000,
+                        easing: 'linear',
+                        from: 1,
+                        to: 0,
+                        loop: true
                         }
-                        
-                    ],
-        }}
+                    },  
+                }}
+                />
 
+            </div>
 
-        height={500}
-        width={200}
-
-
-
-
-
-        options={
-
-            {
-            maintainAspectRatio: false,
-            layout: {
-                padding: 20
-            },
-            plugins: {
-                title: {
-                    display: true,
-                    text: 'Métodos de  Divulgação'
-
-                },
-            },
-
-            animations: {
-                tension: {
-                  duration: 1000,
-                  easing: 'linear',
-                  from: 1,
-                  to: 0,
-                  loop: true
-                }
-              },  
-     
-              scales: {
-                y: { // defining min and max so hiding the dataset does not change scale range
-                  min: 0,
-                  max: 100
-                }
-              }
-        }}
-        />
-
-    </div>
-)
+        </div>
+    )
 
 }
+
+
+function Clock() {
+    const [clock, setClock] = useState('');
+
+    function getCurrentTime() {
+        let time = new Date().toLocaleTimeString();
+        setClock(time);
+    }
+
+    useEffect(() => {
+        window.setInterval(getCurrentTime, 1000);
+    }, []);
+
+
+    return (
+        <div> {clock} </div>
+    )
+}
+
 
 export default  BarChart
