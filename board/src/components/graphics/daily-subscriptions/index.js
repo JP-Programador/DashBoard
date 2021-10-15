@@ -1,15 +1,19 @@
 import { Bar } from 'react-chartjs-2'
+import axios from 'axios';
 
-const BarChart = () => {
 
+export default async function loadData() {
+const resp = axios.get('https://insf-vestibular-2022.herokuapp.com/inscricoesPorCurso');
+const labels  = resp.data.map(x => x.data);
+const Qtddata = resp.data.map(x => x.qtd)
 return (
     <div>
         <Bar data={{
-                    labels: ['11/10', '12/10', '12/10', '14/10', '15/10', '16/10', '17/10', '18/10'],
+                    labels: labels,
                     datasets: [
                         {
                             label: 'Total de Alunos',
-                            data: [12, 2, 32, 4, 7, 3, 9, 1],
+                            data: Qtddata,
                             backgroundColor: ['red'],
                             borderColor: ['red']
                         }

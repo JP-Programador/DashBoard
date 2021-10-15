@@ -2,7 +2,7 @@ import { Container } from "./styled"
 
 export default function Cabecalho () {
    
-    var meses = new Array("janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+    var meses = new Array("janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
     let d = new Date();
     let dia = d.getDate();
     let x = d.getMonth();
