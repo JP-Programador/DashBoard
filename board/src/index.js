@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import App from './components/graphics/dissemination-method/dissemination-method (line)';
+import App from './Routes';
 
 ReactDOM.render(
   <React.StrictMode>

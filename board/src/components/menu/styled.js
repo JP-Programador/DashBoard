@@ -22,11 +22,11 @@ a {
 
 .log {
     position: fixed;
-    left: -8em;
-    bottom: 48em;
+    right: 61em;
+    bottom: 33em;
 } 
 
-}
+
 
 .navs {
     margin-top: 3em;

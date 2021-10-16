@@ -35,13 +35,6 @@ const BarChart = () => {
 
         
     return (
-
-        <div>
-
-            <Clock />
-
-            <div>
-
             <Line data={data}
                 height={500}
                 width={200}
@@ -68,31 +61,8 @@ const BarChart = () => {
                     },  
                 }}
                 />
-
-            </div>
-
-        </div>
     )
 
-}
-
-
-function Clock() {
-    const [clock, setClock] = useState('');
-
-    function getCurrentTime() {
-        let time = new Date().toLocaleTimeString();
-        setClock(time);
-    }
-
-    useEffect(() => {
-        window.setInterval(getCurrentTime, 1000);
-    }, []);
-
-
-    return (
-        <div> {clock} </div>
-    )
 }
 
 

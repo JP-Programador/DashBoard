@@ -5,7 +5,7 @@ export default async function loadData() {
 
     const labels  = resp.data.map(x => x.curso);
     const qtdData = resp.data.map(x => x.qtd);
-    const total   = resp.data.reduce((prev, curr) => prev + curr.qtd, 0);
+    //const total   = resp.data.reduce((prev, curr) => prev + curr.qtd, 0);
 
     return {
       labels: labels,

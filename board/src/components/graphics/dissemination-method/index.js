@@ -1,27 +1,44 @@
+import axios from 'axios'
+import {useEffect, useState } from 'react'
+
 import { Pie} from 'react-chartjs-2'
 
 
-const BarChart = () => {
+const BarCharts = () => {
+     const [data, setData] = useState({label:[], datasets:[]});
+
+async function loadData() {
+    const resp = await axios.get('https://insf-vestibular-2022.herokuapp.com/comoconheceu');
+    const labels  = resp.data.map(x => x.tipo);
+    const qtdData = resp.data.map(x => x.qtd);
 
 
+    setData({
+        labels: labels,
+        datasets: [{
+        label: `#Como conheceu`,
+        data: qtdData,
+        backgroundColor: [
+            'red',
+            'blue',
+            'green',
+            'yellow',
+            'orange'
+        ],
+        borderColor: [
+            'gray'
+        ]
+        }]
     
+  });
+}
+
+useEffect(() => loadData(), []);
+
 return (
-
-    
     
     <div>
-        
-        <Pie data={{
-                    labels: ['Familia', 'Ex Alunos', 'Amigos', 'Professores'],
-                    datasets: [
-                        {
-                            label: 'Divulgação',
-                            data: [10, 20, 35, 10],
-                            backgroundColor: ['red', 'blue', 'black', 'green', 'yellow'],
-                        }
-                        
-                    ],
-        }}
+        <Pie data={data}
 
 
         height={400}
@@ -54,4 +71,4 @@ return (
 
 }
 
-export default  BarChart
+export default  BarCharts
