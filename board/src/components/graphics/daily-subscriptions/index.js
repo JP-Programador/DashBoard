@@ -17,7 +17,10 @@ async function loadData() {
     setData({
         labels: labels,
         datasets: [{
-        label: 'total de alunos ' + total,
+            display: true,
+            fontSize: 22,
+        labels: 'total de alunos ' + total,
+       
         data: qtdData,
         backgroundColor: [
             'red',
@@ -50,20 +53,22 @@ return (
 
 
 
-        options={
-            {
-            maintainAspectRatio: false,
-            layout: {
-                padding: 20
-            },
-            plugins: {
-                title: {
-                    display: true,
-                    text: 'Inscrição por dia'
+                options={
+                    {
+                    maintainAspectRatio: false,
+                    layout: {
+                        padding: 20
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Inscrição por dia'
 
-                },
-            },
-     
+                        },
+                    
+                }
+
+            
         }}
         />
 

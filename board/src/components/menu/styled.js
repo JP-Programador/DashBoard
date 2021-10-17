@@ -18,6 +18,8 @@ a {
 .name {
     margin-top: 9em;
     text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
 }
 
 .log {
@@ -27,12 +29,12 @@ a {
 } 
 
 
-
 .navs {
     margin-top: 3em;
 }
 
 .nav1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     flex-direction: row;
 
