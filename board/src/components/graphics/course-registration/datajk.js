@@ -10,7 +10,7 @@ export default async function loadData() {
     return {
       labels: labels,
       datasets: [{
-        label: `#Inscrições por Curso`,
+        label: `Inscrições por Curso`,
         data: qtdData,
         backgroundColor: ['rgba(255, 99, 132, 0.2)',
         'rgba(255, 99, 132, 0.2)',

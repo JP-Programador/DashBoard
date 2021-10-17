@@ -63,7 +63,7 @@ export default function Cabecalho () {
     return(
         <Container>
             <div className="box-info">
-                <div className="messenger"> Olá, Teresa, Vamos Trabalhar !</div>
+                <div className="messenger"> Olá Teresa, vamos trabalhar!</div>
                 <div className="box1">
                     <div className="dates"> 
                         <div> <img src="./assets/images/calendar.svg" alt="" /></div>

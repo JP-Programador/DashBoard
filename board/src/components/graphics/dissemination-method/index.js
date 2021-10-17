@@ -1,6 +1,5 @@
-import axios from 'axios'
 import {useEffect, useState } from 'react'
-
+import axios from 'axios';
 import { Pie} from 'react-chartjs-2'
 
 
@@ -25,9 +24,6 @@ async function loadData() {
             'yellow',
             'orange'
         ],
-        borderColor: [
-            'gray'
-        ]
         }]
     
   });
@@ -42,7 +38,7 @@ return (
 
 
         height={400}
-        width={440}
+        width={640}
 
 
 

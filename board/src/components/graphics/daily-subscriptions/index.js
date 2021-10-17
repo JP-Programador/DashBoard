@@ -17,7 +17,7 @@ async function loadData() {
     setData({
         labels: labels,
         datasets: [{
-        label: total,
+        label: 'total de alunos ' + total,
         data: qtdData,
         backgroundColor: [
             'red',

@@ -18,15 +18,16 @@ const BarChart = () => {
             label: `#Como conheceu`,
             data: qtdData,
             backgroundColor: [
-                'red',
+                'black',
                 'blue',
                 'green',
                 'yellow',
                 'orange'
             ],
             borderColor: [
-                'gray'
-            ]
+                'rgb(75, 192, 192)'
+            ],
+            
             }]
         });
     }
@@ -50,15 +51,7 @@ const BarChart = () => {
                             text: 'Métodos de  Divulgação'
                         },
                     },
-                    animations: {
-                        tension: {
-                        duration: 1000,
-                        easing: 'linear',
-                        from: 1,
-                        to: 0,
-                        loop: true
-                        }
-                    },  
+                    
                 }}
                 />
     )
