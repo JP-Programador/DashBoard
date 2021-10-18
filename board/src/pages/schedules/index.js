@@ -15,7 +15,6 @@ export default function Home() {
                     <Gra1 />
                 </div>
                 <div className="gra2">
-                    <Gra2 />
                 </div>
             </ContainerConteudo>
         </Container>

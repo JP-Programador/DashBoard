@@ -15,7 +15,7 @@ justify-content: space-between;
 `
 const ContainerConteudo = styled.div`
 width: 100vw;
-height: 200vh;
+height: 130vh;
 background-color: #F0FFFE;
 
 .gra1, .gra2 {
@@ -24,7 +24,7 @@ background-color: #F0FFFE;
     background-color: white;
     margin: 8em 0px;
     border-radius: 10px;
-    width: 73vw;
+    width: 75vw;
 
 }
 

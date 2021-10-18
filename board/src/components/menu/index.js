@@ -4,7 +4,7 @@ export default function Menu() {
     return (
             <Container>
                 <div className="kkkkkk">
-                <div className="log"> <img src="./assets/images/logo.png" alt="" width="500" height="150"/></div>
+                <div className="log"> <img src="./assets/images/logo.png" alt="" width="500" height="130"/></div>
                 <div className="name"> <h6> Instituto Social  <br/>Nossa Senhora de Fátima</h6></div>
                 </div>
                 <div className="navs">

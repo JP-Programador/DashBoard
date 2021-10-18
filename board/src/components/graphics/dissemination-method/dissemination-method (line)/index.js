@@ -50,6 +50,10 @@ const BarChart = () => {
                             display: true,
                             text: 'Métodos de  Divulgação'
                         },
+                        legend: {
+                            display: false,
+                           
+                        }
                     },
                     
                 }}

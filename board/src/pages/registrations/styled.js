@@ -18,7 +18,7 @@ width: 100vw;
 height: 280vh;
 background-color: #F0FFFE;
 .gra1 {
-    width: 73vw;
+    width: 75vw;
     left: 18.5em;
     position: absolute;
     background-color: white;
@@ -28,7 +28,7 @@ background-color: #F0FFFE;
 }
 
 .gra2 {
-    width: 73vw;
+    width: 75vw;
     left: 18.5em;
     position: absolute;
     margin-top: 35em;
@@ -39,7 +39,7 @@ background-color: #F0FFFE;
 }
 
 .gra3 {
-    width: 73vw;
+    width: 75vw;
     left: 18.5em;
     position: absolute;
     margin-top:63em;

@@ -9,23 +9,30 @@ position: fixed;
 border-top-right-radius: .5em;
 border-bottom-right-radius: .5em;
 
+font-family: Roboto;
+font-weight: 400;
 
+h6 {
+    color: #8C8C8C;
+    font-size: 15px;
+    font-weight: 300;
+}
 a {
     text-decoration: none;
     color: black;
 }
 
 .name {
-    margin-top: 9em;
+    margin-top: 8em;
     text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
 }
+
+
 
 .log {
     position: fixed;
-    right: 61em;
-    bottom: 33em;
+    right: 61.1em;
+    bottom: 33.7em;
 } 
 
 
@@ -34,7 +41,7 @@ a {
 }
 
 .nav1 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     display: flex;
     flex-direction: row;
 
