@@ -61,6 +61,12 @@ return (
                     text: 'Métodos de  Divulgação'
 
                 },
+                legend: {
+                    position: 'right',
+                    labels: {
+                        fontColor: '#000'
+                    }
+                }
             },
      
         }}
