@@ -27,6 +27,10 @@ const BarChart = () => {
             borderColor: [
                 'rgb(75, 192, 192)'
             ],
+        borderWidth: 1,
+        borderColor: '#777',
+        hoverBorderWidth: 3,
+        hoverBorderColor: '#000'
             
             }]
         });

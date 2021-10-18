@@ -25,8 +25,13 @@ const BarCharts = () => {
             'yellow',
             'orange'
         ],
+        borderWidth: 1,
+        borderColor: '#777',
+        hoverBorderWidth: 3,
+        hoverBorderColor: '#000'
         }
       ]
+      
 
     });
 

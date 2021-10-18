@@ -35,13 +35,26 @@ export default async function loadData() {
         'rgba(255, 159, 64, 0.2)',
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)']
+        'rgba(255, 206, 86, 0.2)'],
+        borderWidth: 1,
+        borderColor: '#777',
+        hoverBorderWidth: 3,
+        hoverBorderColor: '#000'
+
+        
+
+
+        
       },
+
+      
   
       
       
     
     
     ]
+
+    
     }
 }
