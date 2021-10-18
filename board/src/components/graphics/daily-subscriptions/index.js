@@ -1,11 +1,13 @@
 import axios from 'axios'
 import {useEffect, useState } from 'react'
 
-import { Bar} from 'react-chartjs-2'
+import { Bar, Chart} from 'react-chartjs-2'
 
 
 const BarCharts = () => {
      const [data, setData] = useState({label:[], datasets:[]});
+
+     
 
 async function loadData() {
     const resp = await axios.get('https://insf-vestibular-2022.herokuapp.com/inscricoesPorDia');
@@ -13,25 +15,50 @@ async function loadData() {
     const qtdData = resp.data.map(x => x.qtd);
     const total   = resp.data.reduce((prev, curr) => prev + curr.qtd, 0);
 
+    
 
-    setData({
+
+    setData(
+        
+        {
+
+        
+        
         labels: labels,
         datasets: [{
-            display: true,
-            fontSize: 22,
-        labels: 'total de alunos ' + total,
+
+        labels: "total de alunos"  + total,
        
         data: qtdData,
         backgroundColor: [
+            'maroon',
             'red',
-            'blue',
+            'coral',
+            'gold',
+            'khaki',
+            'olive',
             'green',
-            'yellow',
-            'orange'
+            'lime',
+            'teal',
+            'aqua',
+            'turquoise',
+            'navy',
+            'blue',
+            'purple',
+            'violet',
+            'beige',
+            'sienna',
+            'chocolate',
+            'plum'
         ],
         borderColor: [
             'gray'
-        ]
+        ],
+        borderWidth: 1,
+        borderColor: '#777',
+        hoverBorderWidth: 4,
+        hoverBorderColor: '#000'
+
         }]
     
   });
@@ -62,9 +89,16 @@ return (
                     plugins: {
                         title: {
                             display: true,
-                            text: 'Inscrição por dia'
+                            text: 'Inscrição por dia',
+                            fontSize: 22
 
                         },
+                        legend: {
+                            position: 'left',
+                            labels: {
+                                fontColor: '#000'
+                            }
+                        }
                     
                 }
 

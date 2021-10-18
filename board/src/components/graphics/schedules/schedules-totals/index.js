@@ -18,13 +18,17 @@ async function loadData() {
         label: `Total de Alunos`,
         data: [2],
         backgroundColor: [
-            'red',
+            'blue',
             'blue',
             
         ],
         borderColor: [
             'gray'
-        ]
+        ],
+        borderWidth: 1,
+        borderColor: '#777',
+        hoverBorderWidth: 3,
+        hoverBorderColor: '#000'
         }]
     
   });
