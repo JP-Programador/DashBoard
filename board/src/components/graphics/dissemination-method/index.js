@@ -40,7 +40,7 @@ return (
 
 
         height={400}
-        width={640}
+        width={540}
 
 
 

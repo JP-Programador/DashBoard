@@ -5,9 +5,7 @@ import Head from '../../components/head'
 import Menu from '../../components/menu'
 
 import 'react-calendar/dist/Calendar.css';
-import Calendar from 'react-calendar';
 
-import Daily from '../../components/graphics/daily-subscriptions/index'
 import Method from '../../components/graphics/dissemination-method/index'
 
 export default function Home() {
@@ -19,15 +17,9 @@ export default function Home() {
             <Menu />
             <ContainerConteudo>
                 <Head />
-                <div className="gra1">
-                </div>
-                <div className="box-gra">
                     <div className="gra2">
-                    <   Method />
+                    <  Method />
                     </div>
-
-
-                </div>
             </ContainerConteudo>
         </Container>
     )

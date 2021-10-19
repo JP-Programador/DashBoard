@@ -22,7 +22,7 @@ background-color: #F0FFFE;
     left: 18.5em;
     position: absolute;
     background-color: white;
-    margin: 8em 0px;
+    margin-top: 12em;
     border-radius: 10px;
     width: 75vw;
 

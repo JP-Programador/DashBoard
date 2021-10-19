@@ -59,7 +59,7 @@ const BarCharts = () => {
         <Bar data={data}
 
 
-        height={400}
+        height={700}
         width={640}
 
 
@@ -89,7 +89,7 @@ const BarCharts = () => {
 
                 },
                 legend: {
-                  display: true,
+                  display: false,
                     font: {
                     size: 20
                     },

@@ -93,7 +93,7 @@ return (
         <Line data={data}
 
 
-        height={400}
+        height={550}
         width={440}
 
 
@@ -110,7 +110,7 @@ return (
                     plugins: {
                         title: {
                             display: true,
-                            text: 'Inscrição Diárias',
+                            text: 'Agendamentos Diários',
                             padding: {
                                 top: 10,
                                 bottom: 30

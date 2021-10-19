@@ -3,7 +3,7 @@ import { Container, ContainerConteudo } from './styled'
 import Head from '../../components/head'
 import Menu from '../../components/menu'
 
-import Gra1 from '../../components/graphics/schedules/index'
+import Gra1 from '../../components/graphics/daily-subscriptions/index'
 export default function Home() {
     return (
         <Container>
@@ -12,8 +12,6 @@ export default function Home() {
                 <Head />
                 <div className="gra1">
                     <Gra1 />
-                </div>
-                <div className="gra2">
                 </div>
             </ContainerConteudo>
         </Container>
