@@ -25,10 +25,8 @@ async function loadData() {
         borderColor: [
             'gray'
         ],
-        borderWidth: 1,
-        borderColor: '#777',
-        hoverBorderWidth: 3,
-        hoverBorderColor: '#000'
+        borderWidth: 4,
+        borderColor: 1
         }]
     
   });

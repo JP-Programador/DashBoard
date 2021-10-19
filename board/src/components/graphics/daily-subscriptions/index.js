@@ -13,7 +13,6 @@ async function loadData() {
     const resp = await axios.get('https://insf-vestibular-2022.herokuapp.com/inscricoesPorDia');
     const labels  = resp.data.map(x => x.data);
     const qtdData = resp.data.map(x => x.qtd);
-    const total   = resp.data.reduce((prev, curr) => prev + curr.qtd, 0);
 
     
 
@@ -54,9 +53,8 @@ async function loadData() {
         borderColor: [
             'gray'
         ],
-        borderWidth: 1,
-        hoverBorderWidth: 4,
-        hoverBorderColor: '#000'
+        borderWidth: 4,
+        borderColor: 1
 
         }]
     

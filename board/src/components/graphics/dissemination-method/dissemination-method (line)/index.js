@@ -27,7 +27,8 @@ const BarChart = () => {
             borderColor: [
                 '#994CBA',
             ],
-        borderWidth: 2,            
+            borderWidth: 4,
+            borderColor: 1            
             }]
         });
     }
