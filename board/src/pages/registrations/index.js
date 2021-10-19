@@ -18,13 +18,6 @@ export default function Home() {
                 <div className="gra1">
                   <Course/>
                 </div>
-                <div className="gra2">
-                  <Daily />
-                </div>
-                <div className="gra3">
-                   
-                </div>
-               
             </ContainerINS>
         </Containerinc>
     )

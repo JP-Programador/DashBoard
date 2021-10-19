@@ -17,7 +17,7 @@ justify-content: space-between;
 `
 const ContainerConteudo = styled.div`
 width: 100vw;
-height: 75em;
+height: 100vh;
 background-color: #F0FFFE;
 
 
@@ -33,7 +33,7 @@ background-color: #F0FFFE;
 
 .box-gra {
     position: absolute;
-    top: 46em;
+    top: 26em;
     left: 18.8em;
     display: flex;
     flex-direction: row;
@@ -44,8 +44,7 @@ background-color: #F0FFFE;
 
 }
 .gra2 {
-    background-color: white;
-    margin-right: 2em;
+   
     border-radius: 10px;
 }
 
