@@ -55,19 +55,34 @@ return (
                 padding: 20
             },
             plugins: {
+
+                datalabels: {
+                    color: "black",
+                    textAlign: "center",
+                    
+                  },
+
                 title: {
                     display: true,
                     text: 'Métodos de  Divulgação',
                     padding: {
                         top: 10,
                         bottom: 30
+                    },
+                    font: {
+                        size: 18
                     }
                 },
                 legend: {
                     position: 'right',
                     labels: {
-                        fontColor: '#000'
-                    }
+                        fontColor: '#000',
+                        font: {
+                            size: 20
+                          },
+                    },
+                
+                   
                 }
             },
      
