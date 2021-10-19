@@ -27,7 +27,8 @@ return (
 
             elements: {
                 line: {
-                  borderWidth: 3
+                    borderWidth: 4,
+                    borderColor: 1
                 }
               },
 

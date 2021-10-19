@@ -19,13 +19,29 @@ const BarCharts = () => {
         label: `Total de Alunos`,
         data: qtdData,
         backgroundColor: [
-            'red',
-            'blue',
-            'green',
-            'yellow',
-            'orange'
+          '#FF0000',
+          '#FF8000',
+          '#FFFF00',
+          '#80FF00',
+          '#00FF00',
+          '#00FF80',
+          '#00FFFF',
+          '#0080FF',
+          '#0000FF',
+          '#7F00FF',
+          '#7F00FF',
+          '#FF00FF',
+          '#FF007F',
+          '#FF007F',
+          '#330019',
+          '#663300',
+          '#FF9999',
+          '#004C99',
+          '#660000',
+          '#FF99CC'
         ],
-        borderWidth: 1,
+        borderWidth: 4,
+        borderColor: 1
         
         }
       ]
