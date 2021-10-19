@@ -5,7 +5,6 @@ import Head from '../../components/head'
 import Menu from '../../components/menu'
 
 import Course from '../../components/graphics/course-registration/index'
-import Daily from '../../components/graphics/daily-subscriptions/index'
 
 export default function Home() {
 
