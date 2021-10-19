@@ -115,7 +115,7 @@ export default function Cabecalho () {
                 <div className="card1">
                     <div className="car-img"> <img src="./assets/images/check.svg" alt=""/></div>
                     <div className="car-name"> Prova Presencial </div>
-                    <div className="car-resul" style={{color: '#6B1AF0'}}> 0 / <span>{InsTotal} </span> </div>
+                    <div className="car-resul" style={{color: '#6B1AF0'}}> Indefinido </div>
                 </div>
             </div>
         </Container>
