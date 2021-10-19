@@ -8,7 +8,7 @@ const BarChart = () => {
 
     
 async function loadData() {
-    const resp = await axios.get('https://insf-vestibular-2022.herokuapp.com/');
+    const resp = await axios.get('https://insf-vestibular-2022.herokuapp.com/inscricoesPorDia');
     const labels  = resp.data.map(x => x.data);
     const qtdData = resp.data.map(x => x.qtd);
 
@@ -75,7 +75,7 @@ return (
             plugins: {
                 title: {
                     display: true,
-                    text: 'Agendamentos',
+                    text: 'Agendamentos Diários',
                     padding: {
                         top: 10,
                         bottom: 30

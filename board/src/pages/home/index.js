@@ -20,18 +20,12 @@ export default function Home() {
             <ContainerConteudo>
                 <Head />
                 <div className="gra1">
-                    <Daily />
                 </div>
                 <div className="box-gra">
                     <div className="gra2">
                     <   Method />
                     </div>
-                    <div className="calendar">
-                         <Calendar
-                            onChange={onChange}
-                            value={value}
-                        />
-                    </div>
+
 
                 </div>
             </ContainerConteudo>

@@ -21,11 +21,7 @@ export default function Home() {
                 </div>
                 <div className="gra2">
                   <Daily />
-                </div>
-                <div className="gra3">
-                    <Lines />
-                </div>
-               
+                </div>               
             </ContainerINS>
         </Containerinc>
     )
