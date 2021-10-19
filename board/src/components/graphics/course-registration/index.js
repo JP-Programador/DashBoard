@@ -73,6 +73,7 @@ const BarCharts = () => {
             },
             
             plugins: {
+         
                 title: {
                     display: true,
                     text: 'Inscrições por Curso',
@@ -86,7 +87,10 @@ const BarCharts = () => {
 
                 },
                 legend: {
-                  display: false,
+                  display: true,
+                    font: {
+                    size: 20
+                    },
                  
               }
             },

@@ -8,11 +8,10 @@ export default function Cabecalho () {
 
     const [InsTotal, setInsTotal] = useState(0);
     const [clock, setClock] = useState('');
-
-
     const [AgenTotal, setAgenTotal] = useState(0);
     const [Dia, setDia] = useState('');
-
+    const [ignorados, SetIgnorados] = useState([])
+ 
     async function loadTempo() {
         let d = new Date()
         if (d.getHours() > 5 & d.getHours() < 13) {
@@ -33,7 +32,8 @@ export default function Cabecalho () {
 
         const r = await axios.get('https://insf-vestibular-2022.herokuapp.com/inscricoesPorDia');
 
-//        const resp = await axios.get('https://insf-vestibular-2022.herokuapp.com/agendaramENaoVieram?dateMin=2021-10-13&dateMax=2021-10-21');
+        const resp = await axios.get('https://insf-vestibular-2022.herokuapp.com/agendaramENaoVieram?dateMin=2021-10-13&dateMax=2021-10-21');
+        SetIgnorados([resp.data.realidade]);
 
 
        let inscrito = dd.data.reduce((prev, curr) => prev + curr.qtd, 0);
@@ -43,8 +43,6 @@ export default function Cabecalho () {
        let agendamentos = r.data.reduce((prev, curr) => prev + curr.qtd, 0);
        setAgenTotal(agendamentos);
 
-       //let ignorados = resp.data.map(x => x.qtd);
-       //setIgnoTotal(ignorados);
 
     }
 
@@ -99,7 +97,7 @@ export default function Cabecalho () {
             <div className="box-card">
                 <div className="card1">
                     <div className=""> <img src="./assets/images/user.svg" alt=""/></div>
-                    <div className="car-name"> Total Cadastrados </div>
+                    <div className="car-name"> Total Cadastrado </div>
                     <div className="car-resul"> {InsTotal} </div>
                 </div>
                 <div className="card1">
@@ -110,7 +108,7 @@ export default function Cabecalho () {
                 <div className="card1">
                     <div className="">  <img src="./assets/images/google_calendar_.svg" alt=""/></div>
                     <div className="car-name"> Agendamentos Ignorados </div>
-                    <div className="car-resul"style={{color: 'red'}}> 0</div>
+                    <div className="car-resul"style={{color: 'red'}}> {ignorados} </div>
                 </div>
                 <div className="card1">
                     <div className="car-img"> <img src="./assets/images/check.svg" alt=""/></div>

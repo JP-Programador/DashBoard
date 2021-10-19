@@ -27,7 +27,7 @@ export default function Home() {
                     <   Method />
                     </div>
                     <div className="calendar">
-                        <Calendar
+                         <Calendar
                             onChange={onChange}
                             value={value}
                         />
