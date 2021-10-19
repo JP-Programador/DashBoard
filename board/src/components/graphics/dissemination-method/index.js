@@ -39,7 +39,7 @@ return (
         <Pie data={data}
 
 
-        height={400}
+        height={500}
         width={540}
 
 
@@ -69,7 +69,7 @@ return (
                         bottom: 30
                     },
                     font: {
-                        size: 18
+                        size: 22
                     }
                 },
                 legend: {
@@ -78,7 +78,7 @@ return (
                         fontColor: '#000',
                         font: {
                             size: 20
-                          },
+                          }, 
                     },
                 
                    

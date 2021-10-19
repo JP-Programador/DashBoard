@@ -21,10 +21,15 @@ height: 100vh;
 background-color: #F0FFFE;
 
 .gra2 {
-   
-    border-radius: 10px;
-    margin-top: 15em;
+   position: absolute;
+   left: 18.7em;
 
+    border-radius: 10px;
+    margin-top: 10em;
+    background-color: white;
+    width: 67.5em;
+
+    padding: 2em 0em;
 }
 
 .react-calendar {
