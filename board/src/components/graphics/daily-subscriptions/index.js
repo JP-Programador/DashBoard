@@ -1,7 +1,7 @@
 import axios from 'axios'
 import {useEffect, useState } from 'react'
 
-import { Bar} from 'react-chartjs-2'
+import { Line} from 'react-chartjs-2'
 
 
 const BarCharts = () => {
@@ -55,7 +55,28 @@ async function loadData() {
   
           opacity: 0.1,
           borderWidth: 2,
-          borderColor: 1
+          borderColor: [
+            'rgba(0, 128, 255, 0.7)',
+            'rgba(204, 0, 0, 0.7)',
+            'rgba(204, 102, 0, 0.7)',
+            'rgba(204, 204, 0, 0.7)',
+            'rgba(102, 204, 0, 0.7)',
+            'rgba(0, 204, 0, 0.7)',
+            'rgba(0, 204, 102, 0.7)',
+            'rgba(0, 204, 204, 0.7)',
+            'rgba(0, 104, 204, 0.7)',
+            'rgba(0, 0, 204, 0.7)',
+            'rgba(102, 0, 204, 0.7)',
+            'rgba(204, 0, 204, 0.7)',
+            'rgba(204, 0, 102, 0.7)',
+            'rgba(102, 0, 0, 0.7)',
+            'rgba(102, 51, 0, 0.7)',
+            'rgba(102, 102, 0, 0.7)',
+            'rgba(51, 102, 0, 0.7)',
+            'rgba(0, 102, 102, 0.7)',
+            'rgba(51, 0, 102, 0.7)',
+            'rgba(102, 51, 35, 0.7)',
+          ]
           }
         ]
         
@@ -69,7 +90,7 @@ useEffect(() => loadData(), []);
 return (
     
     <div>
-        <Bar data={data}
+        <Line data={data}
 
 
         height={400}

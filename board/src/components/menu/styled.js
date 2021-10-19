@@ -9,7 +9,7 @@ position: fixed;
 border-top-right-radius: .5em;
 border-bottom-right-radius: .5em;
 
-font-family: Roboto;
+font-family: Gabriela;
 font-weight: 400;
 
 h6 {

@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react';
-import { Line} from 'react-chartjs-2'
+import { Bar} from 'react-chartjs-2'
 
 
 const BarChart = () => {
@@ -36,7 +36,7 @@ const BarChart = () => {
 
         
     return (
-            <Line data={data}
+            <Bar data={data}
                 height={500}
                 width={200}
                 options={

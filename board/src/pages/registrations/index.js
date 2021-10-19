@@ -6,7 +6,6 @@ import Menu from '../../components/menu'
 
 import Course from '../../components/graphics/course-registration/index'
 import Daily from '../../components/graphics/daily-subscriptions/index'
-import Lines  from '../../components/graphics/dissemination-method/dissemination-method (line)'
 
 export default function Home() {
 
@@ -23,7 +22,7 @@ export default function Home() {
                   <Daily />
                 </div>
                 <div className="gra3">
-                    <Lines />
+                   
                 </div>
                
             </ContainerINS>
