@@ -30,36 +30,39 @@ async function loadData() {
        
         data: qtdData,
         backgroundColor: [
-            'maroon',
-            'red',
-            'coral',
-            'gold',
-            'khaki',
-            'olive',
-            'green',
-            'lime',
-            'teal',
-            'aqua',
-            'turquoise',
-            'navy',
-            'blue',
-            'purple',
-            'violet',
-            'beige',
-            'sienna',
-            'chocolate',
-            'plum'
-        ],
-        borderColor: [
-            'gray'
-        ],
-        borderWidth: 4,
-        borderColor: 1
-
-        }]
-    
-  });
-}
+            'rgba(132, 35, 35, 0.7)',
+            'rgba(204, 0, 0, 0.7)',
+            'rgba(204, 102, 0, 0.7)',
+            'rgba(204, 204, 0, 0.7)',
+            'rgba(102, 204, 0, 0.7)',
+            'rgba(0, 204, 0, 0.7)',
+            'rgba(0, 204, 102, 0.7)',
+            'rgba(0, 204, 204, 0.7)',
+            'rgba(0, 104, 204, 0.7)',
+            'rgba(0, 0, 204, 0.7)',
+            'rgba(102, 0, 204, 0.7)',
+            'rgba(204, 0, 204, 0.7)',
+            'rgba(204, 0, 102, 0.7)',
+            'rgba(102, 0, 0, 0.7)',
+            'rgba(102, 51, 0, 0.7)',
+            'rgba(102, 102, 0, 0.7)',
+            'rgba(51, 102, 0, 0.7)',
+            'rgba(0, 102, 102, 0.7)',
+            'rgba(51, 0, 102, 0.7)',
+            'rgba(102, 51, 35, 0.7)',
+            
+          ],
+  
+          opacity: 0.1,
+          borderWidth: 2,
+          borderColor: 1
+          }
+        ]
+        
+  
+      });
+  
+    }
 
 useEffect(() => loadData(), []);
 

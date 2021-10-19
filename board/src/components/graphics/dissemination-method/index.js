@@ -18,16 +18,15 @@ async function loadData() {
         label: `#Como conheceu`,
         data: qtdData,
         backgroundColor: [
-            'red',
-            'blue',
-            'green',
-            'yellow',
-            'orange'
+            'rgba(204, 0, 0, 0.7)',
+            'rgba(258, 128, 0, 0.7)',
+            'rgba(0, 0, 204, 0.7)',
+            'rgba(102, 51, 0, 0.7)',
+            'rgba(0, 0, 205, 0.7)',
         ],
-        borderWidth: 1,
-        borderColor: '#777',
-        hoverBorderWidth: 3,
-        }]
+    }
+]
+        
     
   });
 }
