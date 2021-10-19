@@ -15,23 +15,19 @@ const BarChart = () => {
         setData({
             labels: labels,
             datasets: [{
-            label: `#Como conheceu`,
+            label: `Total de Alunos`,
             data: qtdData,
             backgroundColor: [
-                'black',
-                'blue',
-                'green',
-                'yellow',
-                'orange'
+                '#FF00D5',
+                '#00D5FF',
+                '#64569E',
+                '#FF00D5',
+                '#137A8E'
             ],
             borderColor: [
-                'rgb(75, 192, 192)'
+                '#994CBA',
             ],
-        borderWidth: 1,
-        borderColor: '#777',
-        hoverBorderWidth: 3,
-        hoverBorderColor: '#000'
-            
+        borderWidth: 2,            
             }]
         });
     }
@@ -52,13 +48,22 @@ const BarChart = () => {
                     plugins: {
                         title: {
                             display: true,
-                            text: 'Métodos de  Divulgação'
+                            text: 'Métodos de  Divulgação',
+                            padding: {
+                                top: 10,
+                                bottom: 30
+                            },
+                            font: {
+                                    size: 18
+                            }
                         },
                         legend: {
                             display: false,
                            
                         }
                     },
+                
+            
                     
                 }}
                 />

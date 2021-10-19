@@ -60,7 +60,14 @@ return (
             plugins: {
                 title: {
                     display: true,
-                    text: 'Agendamentos'
+                    text: 'Agendamentos',
+                    padding: {
+                        top: 10,
+                        bottom: 30
+                    },
+                    font: {
+                            size: 18
+                    }
                 }
             }
      

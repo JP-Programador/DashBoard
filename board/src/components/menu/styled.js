@@ -23,16 +23,18 @@ a {
 }
 
 .name {
-    margin-top: 8em;
     text-align: center;
+    margin-top: -1.8em;
 }
 
 
-
+.kkk {
+    display: flex;
+    flex-direction: column;
+}
 .log {
-    position: fixed;
-    right: 61.1em;
-    bottom: 33.7em;
+    margin-left: -7.5em;
+    margin-top: -1.5em;
 } 
 
 

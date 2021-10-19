@@ -15,23 +15,23 @@ justify-content: space-between;
 `
 const ContainerINS = styled.div`
 width: 100vw;
-height: 280vh;
+height: 260vh;
 background-color: #F0FFFE;
 .gra1 {
-    width: 75vw;
+    width: 73vw;
     left: 18.5em;
     position: absolute;
     background-color: white;
     margin: 8em 0px;
     border-radius: 10px;
-
+    padding: 1em;
 }
 
 .gra2 {
     width: 75vw;
     left: 18.5em;
     position: absolute;
-    margin-top: 35em;
+    margin-top: 37em;
     background-color: white;
     border-radius: 10px;
 

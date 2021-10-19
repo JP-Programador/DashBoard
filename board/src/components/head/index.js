@@ -7,11 +7,26 @@ import {useEffect, useState } from 'react'
 export default function Cabecalho () {
 
     const [InsTotal, setInsTotal] = useState(0);
+    const [clock, setClock] = useState('');
 
 
     const [AgenTotal, setAgenTotal] = useState(0);
+    const [Dia, setDia] = useState('');
 
+    async function loadTempo() {
+        let d = new Date()
+        if (d.getHours() > 5 & d.getHours() < 13) {
+            setDia('Bom Dia')
+        }
+        else if (d.getHours() > 13 & d.getHours() < 18) {
+            setDia('Boa Tarde')
+        }
+        else {
+            setDia('Boa Noite')
+        }
 
+        setDia(setDia);
+    }
 
     async function loadData() {
         const dd = await axios.get('https://insf-vestibular-2022.herokuapp.com/inscricoesPorCurso');
@@ -33,7 +48,6 @@ export default function Cabecalho () {
 
     }
 
-    const [clock, setClock] = useState('');
 
 
 
@@ -42,28 +56,33 @@ export default function Cabecalho () {
         setClock(time);
     }
 
+  
+  
+    var meses = new Array("janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+    let d = new Date();
+    let dia = d.getDate();
+    let x = d.getMonth();
+    let mes = meses[x];
+  
+  
     useEffect(() => {
         loadData();
         window.setInterval(getCurrentTime, 1000);
-
+        loadTempo();
       }, [])
     
 
 
 
     
-   
-    var meses = new Array("janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
-    let d = new Date();
-    let dia = d.getDate();
-    let x = d.getMonth();
-    let mes = meses[x];
+  
+
 
 
     return(
         <Container>
             <div className="box-info">
-                <div className="messenger"> Olá Teresa, vamos trabalhar!</div>
+                <div className="messenger"> {Dia}, Teresa!</div>
                 <div className="box1">
                     <div className="dates"> 
                         <div> <img src="./assets/images/calendar.svg" alt="" /></div>

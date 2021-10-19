@@ -28,6 +28,7 @@ background-color: #F0FFFE;
     background-color: white;
     margin: 8em 0px;
     border-radius: 10px;
+    
 }
 
 .box-gra {
@@ -35,7 +36,8 @@ background-color: #F0FFFE;
     top: 46em;
     left: 18.8em;
     display: flex;
-justify-content:space-between}   
+    flex-direction: row;
+}   
 .gra3 {
     background-color: white;
     border-radius: 10px;
@@ -43,9 +45,16 @@ justify-content:space-between}
 }
 .gra2 {
     background-color: white;
-    margin-right: 7em;
+    margin-right: 2em;
     border-radius: 10px;
 }
+
+.react-calendar {
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+    }
+
 `
 
 export {Container, ContainerConteudo}

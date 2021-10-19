@@ -1,7 +1,7 @@
 import axios from 'axios'
 import {useEffect, useState } from 'react'
 
-import { Bar, Chart} from 'react-chartjs-2'
+import { Bar} from 'react-chartjs-2'
 
 
 const BarCharts = () => {
@@ -27,7 +27,7 @@ async function loadData() {
         labels: labels,
         datasets: [{
 
-        labels: "total de alunos"  + total,
+        label: "total de alunos" ,
        
         data: qtdData,
         backgroundColor: [
@@ -55,7 +55,6 @@ async function loadData() {
             'gray'
         ],
         borderWidth: 1,
-        borderColor: '#777',
         hoverBorderWidth: 4,
         hoverBorderColor: '#000'
 
@@ -84,20 +83,24 @@ return (
                     {
                     maintainAspectRatio: false,
                     layout: {
-                        padding: 20
+                        padding: 10
                     },
                     plugins: {
                         title: {
                             display: true,
-                            text: 'Inscrição por dia',
-                            fontSize: 22
+                            text: 'Inscrição Diárias',
+                            padding: {
+                                top: 10,
+                                bottom: 30
+                            },
+                            font: {
+                                    size: 18
+                            }
 
                         },
                         legend: {
-                            position: 'left',
-                            labels: {
-                                fontColor: '#000'
-                            }
+                            display: false,
+                           
                         }
                     
                 }

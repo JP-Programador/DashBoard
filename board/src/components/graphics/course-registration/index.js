@@ -26,9 +26,7 @@ const BarCharts = () => {
             'orange'
         ],
         borderWidth: 1,
-        borderColor: '#777',
-        hoverBorderWidth: 3,
-        hoverBorderColor: '#000'
+        
         }
       ]
       
@@ -55,15 +53,26 @@ const BarCharts = () => {
           {
             maintainAspectRatio: false,
             layout: {
-                padding: 2
+                padding: 0
             },
             
             plugins: {
                 title: {
                     display: true,
-                    text: 'Inscrições por Curso'
+                    text: 'Inscrições por Curso',
+                    padding: {
+                      top: 10,
+                      bottom: 30
+                  },
+                  font: {
+                          size: 18
+                  }
 
                 },
+                legend: {
+                  display: false,
+                 
+              }
             },
      
         }}

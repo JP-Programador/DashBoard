@@ -27,7 +27,6 @@ async function loadData() {
         borderWidth: 1,
         borderColor: '#777',
         hoverBorderWidth: 3,
-        hoverBorderColor: '#000'
         }]
     
   });
@@ -58,8 +57,11 @@ return (
             plugins: {
                 title: {
                     display: true,
-                    text: 'Métodos de  Divulgação'
-
+                    text: 'Métodos de  Divulgação',
+                    padding: {
+                        top: 10,
+                        bottom: 30
+                    }
                 },
                 legend: {
                     position: 'right',
