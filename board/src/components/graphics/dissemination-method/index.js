@@ -77,8 +77,8 @@ return (
                     display: true,
                     text: 'Métodos de  Divulgação',
                     padding: {
-                        top: 10,
-                        bottom: 30
+                        top: 20,
+                        bottom: 40
                     },
                     font: {
                         size: 22
