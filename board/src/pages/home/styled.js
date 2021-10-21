@@ -17,7 +17,7 @@ justify-content: space-between;
 `
 const ContainerConteudo = styled.div`
 width: 100vw;
-height: 110vh;
+height: 52em;
 background-color: #F0FFFE;
 
 .gra2 {
@@ -27,16 +27,11 @@ background-color: #F0FFFE;
     border-radius: 10px;
     margin-top: 10em;
     background-color: white;
-    width: 67.5em;
+    width: 63.5em;
 
     padding: 2em 0em;
 }
 
-.react-calendar {
-    border: none;
-    border-radius: 10px;
-    padding: 1em;
-    }
 
 `
 

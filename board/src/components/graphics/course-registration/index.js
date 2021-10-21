@@ -75,7 +75,7 @@ const BarCharts = () => {
         ],
 
         opacity: 0.1,
-        borderWidth: 2,
+        borderWidth: 1,
         borderColor: 1
         }
       ]
@@ -106,29 +106,7 @@ const BarCharts = () => {
                 padding: 0
             },
             
-            plugins: {
-         
-                title: {
-                    display: true,
-                    text: 'Inscrições por Curso',
-                    padding: {
-                      top: 10,
-                      bottom: 30
-                  },
-                  font: {
-                          size: 18
-                  }
-
-                },
-                legend: {
-                  display: false,
-                    font: {
-                    size: 20
-                    },
-                 
-              }
-            },
-     
+          
         }}
         />
 

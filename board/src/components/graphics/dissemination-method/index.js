@@ -1,10 +1,21 @@
 import {useEffect, useState } from 'react'
 import axios from 'axios';
 import { Pie} from 'react-chartjs-2'
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 
+import {Chart} from 'chart.js';
 
 const BarCharts = () => {
      const [data, setData] = useState({label:[], datasets:[]});
+
+      Chart.register(ChartDataLabels);
+     Chart.defaults.set('plugins.datalabels', {
+        color: 'black',
+        align: 'end',
+        anchor: 'end'
+
+    });
+
 
 async function loadData() {
     const resp = await axios.get('https://insf-vestibular-2022.herokuapp.com/comoconheceu');
@@ -18,15 +29,14 @@ async function loadData() {
         label: `#Como conheceu`,
         data: qtdData,
         backgroundColor: [
-            'rgba(204, 0, 0, 0.7)',
-            'rgba(258, 128, 0, 0.7)',
-            'rgba(0, 0, 204, 0.7)',
-            'rgba(102, 51, 0, 0.7)',
-            'rgba(0, 204, 204, 0.7)',
+            'red',
+            'blue',
+            'green',
+            'yellow',
+            'orange'
         ],
-    }
-]
-        
+        borderWidth: 1,
+        }]
     
   });
 }
@@ -39,13 +49,15 @@ return (
         <Pie data={data}
 
 
-        height={500}
-        width={540}
+        height={400}
+        width={640}
 
 
 
 
 
+
+  
 
         options={
             {
@@ -85,7 +97,9 @@ return (
                 }
             },
      
-        }}
+        }
+
+        }
         />
 
     </div>
