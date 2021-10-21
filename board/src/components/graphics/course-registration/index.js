@@ -105,7 +105,25 @@ const BarCharts = () => {
             layout: {
                 padding: 0
             },
-            
+            plugins: {
+              title: {
+                  display: true,
+                  text: 'Inscrições por Curso',
+                  padding: {
+                      top: 20,
+                      bottom: 30
+                  },
+                  font: {
+                          size: 18
+                  }
+
+              },
+              legend: {
+                  display: false,
+                 
+              }
+          
+      }
           
         }}
         />
