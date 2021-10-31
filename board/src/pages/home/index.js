@@ -1,8 +1,6 @@
 import { Container, ContainerConteudo } from './styled'
 
-import LoadingBar from 'react-top-loading-bar'
 
-import { useEffect, useRef } from 'react';
 
 
 
@@ -14,11 +12,6 @@ import Method from '../../components/graphics/dissemination-method/index'
 
 export default function Home() {
 
-
-    
-    useEffect (() => {
-
-    }, [])
 
     return (
         <Container>
