@@ -1,8 +1,9 @@
 import { Container } from "./styled"
 import axios from "axios";
 
-import {useEffect, useState } from 'react'
- 
+import LoadingBar from 'react-top-loading-bar'
+
+import { useState, useEffect, useRef } from 'react'; 
 
 export default function Cabecalho () {
 
@@ -17,7 +18,7 @@ export default function Cabecalho () {
         if (d.getHours() > 5 & d.getHours() < 13) {
             setDia('Bom Dia')
         }
-        else if (d.getHours() > 13 & d.getHours() < 18) {
+        else if (d.getHours() === 13 || d.getHours() >  13 & d.getHours() < 18) {
             setDia('Boa Tarde')
         }
         else {
@@ -61,12 +62,15 @@ export default function Cabecalho () {
     let dia = d.getDate();
     let x = d.getMonth();
     let mes = meses[x];
-  
+
+    let loading = useRef(null);
+
   
     useEffect(() => {
-        loadData();
         window.setInterval(getCurrentTime, 1000);
         loadTempo();
+        loadData();
+        loading.current.complete();
       }, [])
     
 
@@ -79,6 +83,7 @@ export default function Cabecalho () {
 
     return(
         <Container>
+                    <LoadingBar color="#8808ED" ref={loading} />
             <div className="box-info">
                 <div className="messenger"> {Dia}, Teresa!</div>
                 <div className="box1">
